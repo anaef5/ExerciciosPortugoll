@@ -1,0 +1,59 @@
+EXERCICIO 2: PARA
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro somaimpar = 0
+		
+		para(inteiro i = 1; i <= 500; i+=2){
+			somaimpar += 1
+		}
+		escreva("Soma doa números ímpares, de 1 até 500: \n", somaimpar, "\n")
+	}
+}
+
+-----------------------------------------------------------
+
+EXERCÍCIO 2: ENQUANTO
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro nuser
+		escreva("Digite um número: ")
+          leia(nuser)
+
+		enquanto (nuser < 100)
+		{
+			nuser=nuser*3
+			escreva("\nSeu novo número é: ", nuser)
+		}
+
+		escreva("FIM DO PROGRAMA")
+	}
+}
+
+------------------------------------------------------------
+
+EXERCÍCIO 2: FAÇA ENQUANTO
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro num, soma=0, cont=1
+		escreva("Digite um número: ")
+		leia(num)
+		faca
+		{
+			soma=soma+cont
+			cont++
+		} enquanto(cont<=num)
+		escreva("\nO total somado é: ",soma)
+	}
+}

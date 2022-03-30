@@ -1,0 +1,128 @@
+EXERCÍCIO 4:
+
+programa
+{
+    inclua biblioteca Matematica
+
+    funcao inicio()
+    {
+        inteiro numero
+
+        escreva("digite um número: ")
+        leia(numero)
+
+        se(numero < 0)
+    {
+        escreva("este número é negativo")
+    }
+
+        senao
+        {
+            escreva("este número é positivo")
+        }
+
+        numero = numero%2
+
+        se(numero == 0)
+        {
+            escreva("\neste número é par")
+        }
+
+        senao
+        {
+            escreva("\neste número é ímpar")
+        }
+    }
+}
+
+--------------------------------------------------------------
+
+EXERCÍCIO 8
+
+programa
+{
+	
+	funcao inicio()
+	{
+		real n
+		escreva("Escreva um número: \n")
+		leia(n)
+		
+		se (n > 100)
+		{
+			escreva("O número é: \n", n)
+		}
+		senao
+		{
+			escreva("0")
+		}
+	}
+}
+
+-----------------------------------------------------------------------
+
+EXERCÍCIO 6
+
+programa
+{
+	
+	funcao inicio()
+	{
+		real idade
+
+		escreva ("Qual a sua iade nadador? ")
+		leia (idade)
+
+		se (idade >=5 e idade <=7 )
+		{
+			escreva ("Você pertence a categoria infantil A")
+		}
+		senao se (idade >8 e idade <=11)
+		{
+			escreva ("Você pertence a categoria infantil B")
+		}
+		senao se (idade >12 e idade <=13)
+		{
+			escreva ("Você pertence a categoria juvinil A")
+		}
+		senao se (idade > 14 e idade <= 17)
+		{
+			escreva ("Você pertence a categoria juvinil B")
+		}
+		senao se (idade >= 18)
+		{
+			escreva ("Você pertence a categoria adulto")
+		}
+		senao 
+		{
+			escreva ("Sua idade não é permitida praticar natação")
+		}
+	}
+}
+
+------------------------------------------------------------
+
+EXERCÍCIO 1
+
+programa
+{
+	
+	funcao inicio()
+	{
+		real P, E, M
+		escreva("insira o peso: \n")
+		leia(P)
+
+		se(P > 50){
+			E = P-50
+			M = E*4
+			escreva("O excesso é de: \n", E, "Kg, a multa será de: \n", M, "R$")
+		}
+		
+senao{
+			E = P*0
+			M = P*0
+			escreva("O excesso é de: \n", E, "Kg, a multa será de: \n", M, "R$")
+		}
+	}
+}

@@ -1,0 +1,139 @@
+EXERCÍCIO 1:
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro vet[5],n,x,MaiorValor=0
+		para(x=0;x<5;x++)
+		{
+			escreva("\nInsira a pontuação: ")
+			leia(n)
+			vet[x]=n
+
+			se(vet[x]>MaiorValor)
+			{
+				MaiorValor=vet[x]
+				escreva(MaiorValor)
+			}
+		}
+		escreva("A pontuação é: ")
+		para(x=0;x<5;x++)
+		{
+			escreva(vet[x],"\t")
+		}
+		escreva("O maior número é: ",MaiorValor)
+	}
+}
+
+
+----------------------------------------------------------
+
+EXERCÍCIO 3:
+
+programa
+{
+	inclua biblioteca Util --> aleatorio
+	
+	funcao inicio()
+	{
+		inteiro N1[4][6], N2[4][6], M1[4][6], M2[4][6]
+		
+		para(inteiro linha = 0; linha < 4; linha++)
+		{
+			para(inteiro coluna = 0; coluna < 6; coluna++)
+			{
+				
+				N1[linha][coluna] = aleatorio.sorteia(0, 10)
+			}
+		}
+
+		para(inteiro linha = 0; linha < 4; linha++)
+		{
+			para(inteiro coluna = 0; coluna < 6; coluna++)
+			{
+				
+				N2[linha][coluna] = aleatorio.sorteia(0, 10)
+			}
+		}
+
+		para(inteiro linha = 0; linha < 4; linha++)
+		{
+			para(inteiro coluna = 0; coluna < 6; coluna++)
+			{
+				
+				M1[linha][coluna] = N1[linha][coluna] + N2[linha][coluna]
+			}
+		}
+
+		para(inteiro linha = 0; linha < 4; linha++)
+		{
+			para(inteiro coluna = 0; coluna < 6; coluna++)
+			{
+				
+				M2[linha][coluna] = N1[linha][coluna] - N2[linha][coluna]
+			}
+		}
+		
+	}
+}
+
+--------------------------------------------------------
+
+EXERCÍCIO 2:
+
+programa
+{
+	
+inclua biblioteca Util --> u
+	funcao inicio()
+	{
+		inteiro x,vet[10],cont=0,soma=0
+		para (x=0;x<10;x++){
+			vet[x]=u.sorteia(1, 8)
+			soma+=vet[x]
+			escreva(" " + vet[x] + "\t")
+
+			se(vet[x]==8){
+				cont++
+			}
+		}
+		escreva("\nA média dos número é: " + soma / 10)
+		escreva("\nO número máximo foi rodado " + cont + "vezes")
+	}
+}
+
+--------------------------------------------------------------
+
+EXERCÍCIO 4:
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro m[3][3]
+		inteiro linha,coluna,soma1=0,soma2=0,n
+		para(linha=0;linha<3;linha++)
+		{
+			para(coluna=0;coluna<3;coluna++)
+			{
+				escreva("Digite um número: \n")
+				leia(n)
+				m[linha][coluna]=n
+				soma1=soma1+m[linha][coluna]
+				soma2=m[0][0]+m[1][1]+m[2][2]
+			}
+		}
+		para(linha=0;linha<3;linha++)
+		{
+			para(coluna=0;coluna<3;coluna++)
+			{
+				escreva(m[linha][coluna],"\t")
+			}
+			escreva("\nA soma dos números é: ",soma1)
+			escreva("\nA soma dos números na diagonal, é: ",soma2)
+		}
+	}
+}

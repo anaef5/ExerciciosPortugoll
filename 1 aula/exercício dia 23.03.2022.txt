@@ -1,0 +1,85 @@
+EXERCÍCIO 1:
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro dia,mes,ano,soma
+		escreva("\nDia de nascimento: ")
+		leia(dia)
+		escreva("\nMes de nascimento: ")
+		leia(mes)
+		escreva("\nAno de nascimento: ")
+		leia(ano)
+		soma = (2022-ano)*365 + (mes*30) + dia
+		escreva("Dias vividos: ", soma, "Dias")
+	}
+}
+
+------------------------------------------------------------------------------------------------
+
+EXERCÍCIO 2:
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro diasV,anos,meses,dias
+		escreva("\nHá quantos dias você vive? ")
+		leia(diasV)
+		anos = diasV / 365
+		meses = (diasV - (365*anos)) / 30
+		dias = (diasV - (365*anos)) % 30
+
+		escreva("Você viveu: ", anos, "anos ",dias, "dias e ",meses, "meses ")
+	}
+}
+
+--------------------------------------------------------------------------------------------------
+
+EXERCÍCIO 4:
+
+programa
+{
+	
+	inclua biblioteca Matematica --> mat
+
+	funcao inicio ()
+	{
+
+		inteiro a,b,c
+		escreva("Digite os valores dos números a,b,c\n")
+		leia(a,b,c)
+
+		real R = mat.potencia((b+c), 2.0)
+		real S = mat.potencia((b+c), 2.0)
+		real D = (R + S) / 2
+
+		 escreva("Resultado da expressão é: \n", D)
+	}
+}
+
+-------------------------------------------------------------------------------------------
+
+EXERCÍCIO 8:
+
+programa
+{
+	
+	funcao inicio()
+	{
+		real fabricaC,custoD,imposto,custoC
+		escreva("Digite o custo de fábrica do carro: \n")
+		leia(fabricaC)
+
+		custoD = fabricaC/100*28
+		imposto = fabricaC/100*45
+		custoC = fabricaC + custoD + imposto
+		escreva("O valor que o carro será vendido é de: \n" + custoC + ".")
+	}
+}
+
+---------------------------------------------------------------------------------------------
+
